@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Select a Room</h1>
+    </header>
+
+    <main>
+        <div id="rooms">
+            <h2>Available Rooms</h2>
+            <ul>
+                <li>Single Room - $100 <button onclick="bookRoom('Single')">Book</button> <button onclick="cancelRoom('Single')">Cancel</button></li>
+                <li>Double Room - $150 <button onclick="bookRoom('Double')">Book</button> <button onclick="cancelRoom('Double')">Cancel</button></li>
+                <li>Suite - $250 <button onclick="bookRoom('Suite')">Book</button> <button onclick="cancelRoom('Suite')">Cancel</button></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

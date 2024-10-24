@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Room Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Check Room Availability</h1>
+    </header>
+
+    <main>
+        <form id="checkRoomsForm" onsubmit="return checkAvailability()">
+            <div>
+                <label for="checkDate">Select Date:</label>
+                <input type="date" id="checkDate" name="checkDate" required>
+            </div>
+            <button type="submit">Check Rooms</button>
+        </form>
+
+        <div id="availableRooms"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
